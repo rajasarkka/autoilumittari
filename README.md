@@ -31,7 +31,7 @@ Itse käyttö on suoraviivaista, ja sovellus opastaa täyttämään kentät oike
 -----------------------------------------------------------------------
 Tunnetut ominaisuudet
 
-- Käytetty JavaScriptin versio ei toimi vanhemmilla selaimilla. Valitsin kuitenkin tämän version, sillä se mm. sallii muuttujien määrittelyn vakioiksi (const). Yhteensopivuus taaksepäin olisi kuitenkin helppo toteuttaa esim. muuttamalla const-määritellyt muuttujat var-määritellyiksi.
+- Käytetty JavaScriptin versio ei toimi vanhemmilla selaimilla. Valitsin kuitenkin tämän version, sillä se mm. sallii muuttujien määrittelyn vakioiksi (const). Yhteensopivuus taaksepäin olisi kuitenkin helppo toteuttaa esim. muuttamalla const-määritellyt muuttujat var-määritellyiksi. Käytössä on myös muutamia muita uusia JS2015:n ominaisuuksia, kuten funktion argumentin oletusarvo, jotka nopeuttivat koodin kirjoittamista, mutta ovat helposti muunnettavissa taaksepäin yhteensopiviksi.
 
 - Matkustusajan ja polttoaineen kulutuksen erot lasketaan tarkoista arvoista. Tämä tarkoittaa, että pyöristyksistä johtuen esim. sopivilla numeroilla 
 matkustusaika 1 + erotus != matkustusaika 2. 
