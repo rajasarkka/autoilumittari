@@ -33,6 +33,8 @@ Tunnetut ominaisuudet
 
 - Käytetty JavaScriptin versio ei toimi vanhemmilla selaimilla. Valitsin kuitenkin tämän version, sillä se mm. sallii muuttujien määrittelyn vakioiksi (const). Yhteensopivuus taaksepäin olisi kuitenkin helppo toteuttaa esim. muuttamalla const-määritellyt muuttujat var-määritellyiksi. Käytössä on myös muutamia muita uusia JS2015:n ominaisuuksia, kuten funktion argumentin oletusarvo, jotka nopeuttivat koodin kirjoittamista, mutta ovat helposti muunnettavissa taaksepäin yhteensopiviksi.
 
+- Syöttökenttien (matkan pituus ja matkanopeudet) tyypiksi on asetettu HTML:ssä "number" sekä annettu ylä- ja alarajat. Eri selaimet toteuttavat näitä rajoitteita vaihtelevasti: Chrome sallii vain numeroiden ja plus-/miinusmerkkien sekä desimaalipisteen syöttämisen, kun taas Firefox sallii kaikkien merkkien syöttämisen. Syötetyt arvot joka tapauksessa tarkastetaan JavaScript-koodissa ennen niitten käyttöä laskennassa.
+
 - Matkustusajan ja polttoaineen kulutuksen erot lasketaan tarkoista arvoista. Tämä tarkoittaa, että pyöristyksistä johtuen esim. sopivilla numeroilla 
 matkustusaika 1 + erotus != matkustusaika 2. 
 matkustusaika 1 = 50,4 min => näyttö 0.50
