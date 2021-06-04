@@ -6,6 +6,13 @@ Tekijä Antti Rajasärkkä, antti@rajasarkka.fi, 050 514 9318
 Sovellus on tehty JavaScriptillä, käyttöliittymä HTML + CSS. JavaScriptissä käytössä ovat JS 2015 (ECMAScrpit 6) ominaisuudet, mikä tarkoittaa sitä, että sovellus ei toimi vanhemmilla selaimilla. 
 
 -----------------------------------------------------------------------
+Käytetyt työkalut
+
+- Windows 10
+- tekstieditori (Crimson Editor)
+- selain ja sen developer tools (Chrome & Firefox)
+
+-----------------------------------------------------------------------
 Toteutus on testattu toimivaksi ainakin näillä selaimilla:
 Windows 10:
 - Chrome 91.0.4472.77
