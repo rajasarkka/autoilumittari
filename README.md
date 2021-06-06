@@ -9,7 +9,7 @@ Sovellus on tehty JavaScriptillä, käyttöliittymä HTML + CSS. JavaScriptissä
 Käytetyt työkalut
 
 - Windows 10
-- tekstieditori (Crimson Editor)
+- tekstieditori (Crimson Editor 3.70)
 - selain ja sen developer tools (Chrome & Firefox)
 
 -----------------------------------------------------------------------
