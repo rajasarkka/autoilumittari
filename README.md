@@ -1,5 +1,5 @@
 # autoilumittari
-Solibadiksen koodihaaste 06/2021
+Solibadiksen koodihaaste 05/2021
 
 Tekijä Antti Rajasärkkä, antti@rajasarkka.fi, 050 514 9318
 
