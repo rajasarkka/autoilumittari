@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="fi">
+<head>
+	<meta charset="UTF-8">
+	<title>Autoilumittari</title>
+	
+	<link rel="stylesheet" href="autoilumittari.css">
+	
+	<script src="autoilumittari.js"></script>
+	
+</head>
+<body>
+	<h1>Solibadiksen koodihaaste: Autoilumittari</h1>
+	<p class="subtitle">Tekijä: Antti Rajasärkkä, antti@rajasarkka.fi, p. 050 514 9318</p>
+	
+	<p><em>Autoilumittari</em> vertailee matka-aikaa ja polttoaineen kulutusta halutun pituiselle matkalle.</p>
+	
+	<noscript>Sovellus toimii JavaScriptillä. Salli JavaScript selaimesi asetuksissa ja lataa sivu uudelleen</noscript>
+	
+	<form name="valinnat" onReset="naytaOhjetekstit()">
+		<table class="asettelu">
+		<tr><td>
+			<input type="radio" id="auto1" name="auton_tyyppi" value="1" onChange="laskeTulos()">
+			<label for="auto1" id="auto1_label">Auto 1
+			<script>
+				kirjoitaKulutus(1);
+			</script>
+			</label><br>
+
+			<input type="radio" id="auto2" name="auton_tyyppi" value="2" onChange="laskeTulos()">
+			<label for="auto2" id="auto2_label">Auto 2
+			<script>
+				kirjoitaKulutus(2);
+			</script></label><br>
+			
+			<input type="radio" id="auto3" name="auton_tyyppi" value="3" onChange="laskeTulos()">
+			<label for="auto3" id="auto3_label">Auto 3
+			<script>
+				kirjoitaKulutus(3);
+			</script></label>
+	
+		</td>
+		<td class="ohje">
+			<div id="auto_ohje">Valitse automalli.</div>
+		</td>
+		</tr>
+		</table>
+		
+		<p>
+			<label for="matka">Matkan pituus (km):</label>
+			<input type="number" id="matka" name="matka" min="0" max="100000" maxlength="6" onInput="laskeTulos()">
+			<span class="ohje" id="matkaohje"><script>document.write(MATKAN_PITUUS_TYHJA);</script></span>
+		</p>
+			
+		<table id="tulostaulukko">
+			<tr>
+				<th></th>
+				<th><label for="nopeus1">Matkanopeus 1</label></th>
+				<th><label for="nopeus2">Matkanopeus 2</label></th>
+				<!--<th></th>-->
+			</tr>
+			<tr>
+				<td>Matkanopeus (km/h)</td>
+				<td><input type="number" id="nopeus1" name="nopeus1" min="0" max="1000" maxlength="5" onInput="laskeTulos()"></td>
+				<td><input type="number" id="nopeus2" name="nopeus2" min="0" max="1000" maxlength="5" onInput="laskeTulos()"></td>
+				<td class="ohje"><span id="nopeusohje"><script>document.write(NOPEUS_TYHJA);</script></span></td>
+			</tr>
+			<tr>
+				<td>Matkustusaika (h)<br>ja erotus</td>
+				<td><span id="aika1">&nbsp;</span><span id="aikaero1"></span></td>
+				<td><span id="aika2">&nbsp;</span><span id="aikaero2"></span></td>
+			</tr>
+			<tr>
+				<td>Polttoaineen kokonaiskulutus (l)<br>ja erotus</td>
+				<td><span id="kulutus1">&nbsp;</span><span id="kulutusero1"></span></td>
+				<td><span id="kulutus2">&nbsp;</span><span id="kulutusero2"></span></td>
+				<!--<td></td>-->
+			</tr>
+		</table>
+		<input type="reset" id="tyhjenna" onClick="tyhjennaTulokset()" value="Tyhjennä kentät">
+	</form>
+
+</body>
+</html>

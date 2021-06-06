@@ -1,0 +1,67 @@
+em {
+	font-weight: bold;
+}
+
+/* alaotsikko */
+p.subtitle {
+	font-size: 0.8em;
+}
+/* asettelutaulukko */
+table.asettelu {
+	border: 0px;
+	margin-top: 10px;
+}
+
+/* tulostaulukko */
+#tulostaulukko th, #tulostaulukko td {
+	padding: 5px 10px 5px 10px;
+	border-bottom: 1px solid #767676;
+}
+
+#tulostaulukko tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#tulostaulukko tr:hover {
+	background-color: #deeaff;
+}
+
+/* ohjetekstit */
+.ohje {
+	font-size: 0.8em;
+	vertical-align: bottom;
+}
+td.ohje {
+	border: none !important;
+	background-color: #FFFFFF;
+}
+
+noscript {
+	color: red;
+	border:  double black;
+	padding: 5px;
+	margin: 5px	;
+}
+
+/* erotuskentät */
+#aikaero1, #aikaero2, #kulutusero1, #kulutusero2 {
+	font-size: 0.8em;
+	margin-left: 20px;
+}
+
+/* erotuskenttien väri */
+.positiivinen {
+	color: green;
+}
+
+.negatiivinen {
+	color: red;
+}
+.nolla {
+	
+}
+
+/* tyhjennä kentät -nappi */
+#tyhjenna {
+	margin: 10px;
+}
